@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx/app/routes/app_pages.dart';
+import 'package:flutter_getx/app/routes/app_routes.dart';
+import 'package:flutter_getx/app/ui/theme/app_theme.dart';
+import 'package:get/route_manager.dart';
 
 void main() {
   runApp(
-    MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-          primaryColor: Colors.blue,
-          visualDensity: VisualDensity.adaptivePlatformDensity),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Login Farebase'),
-        ),
-      ),
+    GetMaterialApp(
+      title: 'Login',
+      debugShowCheckedModeBanner: false,
+      getPages: AppPages.routes,
+      initialRoute: Routes.INITIAL,
+      theme: appThemeData,
     ),
   );
 }

@@ -10,7 +10,7 @@ void main() {
       title: 'Login',
       debugShowCheckedModeBanner: false,
       getPages: AppPages.routes,
-      initialRoute: Routes.INITIAL,
+      initialRoute: Routes.LOGIN,
       theme: appThemeData,
     ),
   );
